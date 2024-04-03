@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/minstyle.css">
+        <!-- my css -->
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-template-default page page-id-440 wp-custom-logo">
+    <header id="header" class="header fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-lg-0 h-100 align-items-lg-stretch">
+                <div class="logo">
+                    <a href="http://localhost/probabs/" class="custom-logo-link" rel="home"><img width="250" height="40"
+                            src="http://localhost/probabs/wp-content/uploads/2022/04/logo.png" class="custom-logo"
+                            alt="accountiod-logo" decoding="async"></a>
+                </div>
+                <div class="order-lg-last d-flex align-items-center">
+                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <svg width="18" height="18" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 13.333h15V15h-15v-1.667Zm0-4.167h15v1.667h-15V9.166Zm0-4.167h15v1.667h-15V5Z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button id="nav-search-toggle" class="search-btn d-lg-none">
+                        <svg viewBox="0 0 512 512" class="searchIcon" fill="#fff">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="search-form">
+                        <form action="http://localhost/probabs">
+                            <input type="search" id="search" class="form-control" placeholder="Search Here..." value=""
+                                name="s" title="Search for:" required="">
+                            <button type="submit" class="search-btn">
+                                <svg viewBox="0 0 512 512" class="searchIcon" fill="#fff">
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="menu-main-menu" class="navbar-nav mb-md-2 mb-lg-0 navbar-light">
+                        <li id="menu-item-445"
+                            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-440 current_page_item menu-item-445">
+                            <a href="http://localhost/probabs/about-us/" aria-current="page" class="nav-link">About
+                                Us</a></li>
+                        <li id="menu-item-832"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-832"><a href="#"
+                                class="nav-link">Service</a></li>
+                        <li id="menu-item-5257"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5257"><a
+                                href="http://localhost/probabs/category/banking/" class="nav-link">Banking</a></li>
+                        <li id="menu-item-5265"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265"><a
+                                href="http://localhost/probabs/category/cryptocurrency/"
+                                class="nav-link">Cryptocurrency</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <div class="container my-md-5 my-4 money-cal">
+                <div class="credit-card-body personal-calc">
+                        <div class="row">
+                            <div class="col-md-6 pt-1 personal-cal">
+                                <div class="card-b-head">
+                                    <div class="ch">
+                                        <div class="card-h">Student Loan Calculator</div>
+                                        <div class="small-line mt-3"></div>
+                                        <div class="big-line mt-2 mb-4"></div>
+                                    </div>
+                                </div>
+            
+                                <p> Add your existing student loan details to calculate monthly payments and your
+                                    student loan amortization over time.</p>
+                                    <div id="loan_list">
+                                        <div class="loan">
+                                            <div class="d-flex align-items-center justify-content-between loan-data-parent mb-4">
+                                                <div class="loan-data">
+                                                    <span>Loan 1</span>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <div class="mb-3">
+                                                    <div class="detail">
+                                                        <p class="mb-0">Loan Amount</p>
+                                                        <div class="cal-field">
+                                                            <span class="me-2 cal-field-dollar">$</span>
+                                                            <input class="fw-bold form-control LOAN_AMOUNT" max="999999" min="-Infinity" type="number" placeholder="0" value="28400">
+                                                        </div>
+                                                    </div>
+                                                    <input type="range" class="loan-amount styled-slider slider-progress" style="width: 100%; --value: 28400; --min: 0; --max: 999999;" min="0" max="999999" value="28400">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="detail">
+                                                        <p class="mb-0">Interest Rate</p>
+                                                        <div class="cal-field">
+                                                            <input class="fw-bold ps-md-3 form-control RATE_OF_INTEREST" max="40" min="-Infinity" type="number" placeholder="0" value="4.2">
+                                                            <span class="cal-field-percent">%</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="range" class="rate-of-interest styled-slider slider-progress" style="width: 100%; --value: 4.2; --min: 1.0; --max: 40.0;" min="1.0" max="40.0" step="0.1" value="4.2">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="detail">
+                                                        <p class="mb-0">Loan Term</p>
+                                                        <div class="cal-field">
+                                                            <input class="fw-bold ps-md-3 form-control LOAN_TENURE" max="10" min="-Infinity" type="number" placeholder="0" value="5">
+                                                            <span class="cal-field-percent">Yr</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="range" class="loan-tenure styled-slider slider-progress" style="width: 100%; --value: 5; --min: 1; --max: 10;" min="1" max="10" value="5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="loan-actions">                                      
+                                        <hr class="my-4">
+                                        <div class="result-main">
+                                            <span class="add-loan d-flex justify-content-center align-items-center">
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+                                                        </path>
+                                                    </svg>
+                                                    &nbsp; Add A Loan
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-md-6 mt-md-0 mt-4">
+                           <div class="d-md-flex d-none justify-content-center">
+                            <img src="img/student-cal.png" alt="" class="img-fluid">
+                           </div>
+                                <div class="cal-ans money">
+                                    <div class="top-box box">
+                                        Total Interest <span>$3,136</span>
+                                    </div>
+                                    <hr>
+                                    <div class="bottom-box box">
+                                        Total Amount <span>$31,536</span>
+                                    </div>
+                                    <div class="top-box box monthly mt-4">
+                                        MONTHLY PAYMENT <span>$526</span>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </div>        
+                </div>
+        </div>
+
+    <footer class="mt60 pt30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="footer-left_top">
+                        <div class="logo">
+                            <a href="http://localhost/probabs">Accountiod</a>
+                        </div>
+
+                        <div class="social-container">
+                            <span>
+                                Follow Probabs on Social Media
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="foot-menu d1 mt-4">
+                        <div class="heading-md mb-3">
+                            Trending Categories
+                        </div>
+                        <ul class="menu">
+                            <li class="page_item page-item-440 current_page_item"><a
+                                    href="http://localhost/probabs/about-us/" aria-current="page">About Us</a></li>
+                            <li class="page_item page-item-825"><a
+                                    href="http://localhost/probabs/accounting-outsourcing-services/">Best Outsourced
+                                    Accounting and Bookkeeping Services For a Substantial Financial Growth</a></li>
+                            <li class="page_item page-item-917"><a href="http://localhost/probabs/contact-us/">Contact
+                                    Us</a></li>
+                            <li class="page_item page-item-7293"><a
+                                    href="http://localhost/probabs/credit-card-calculator/">Credit Card Calculator</a>
+                            </li>
+                            <li class="page_item page-item-7233"><a
+                                    href="http://localhost/probabs/currency-converter/">Currency Converter</a></li>
+                            <li class="page_item page-item-5236"><a
+                                    href="http://localhost/probabs/investment-calculator/">Investment Calculator</a>
+                            </li>
+                            <li class="page_item page-item-7231"><a
+                                    href="http://localhost/probabs/personal-loan-calculator/">Personal Loan
+                                    Calculator</a></li>
+                            <li class="page_item page-item-579"><a
+                                    href="http://localhost/probabs/privacy-policy/">Privacy Policy</a></li>
+                            <li class="page_item page-item-7229"><a
+                                    href="http://localhost/probabs/student-loan-calculator/">Student Loan Calculator</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-0 mt-3">
+                    <div class="footer-right">
+                        <div class="foot-menu d2">
+                            <div class="heading-md mb-3">
+                                About Probabs
+                            </div>
+                            <ul class="menu">
+                                <li class="page_item page-item-440 current_page_item"><a
+                                        href="http://localhost/probabs/about-us/" aria-current="page">About Us</a></li>
+                                <li class="page_item page-item-825"><a
+                                        href="http://localhost/probabs/accounting-outsourcing-services/">Best Outsourced
+                                        Accounting and Bookkeeping Services For a Substantial Financial Growth</a></li>
+                                <li class="page_item page-item-917"><a
+                                        href="http://localhost/probabs/contact-us/">Contact Us</a></li>
+                                <li class="page_item page-item-7293"><a
+                                        href="http://localhost/probabs/credit-card-calculator/">Credit Card
+                                        Calculator</a></li>
+                                <li class="page_item page-item-7233"><a
+                                        href="http://localhost/probabs/currency-converter/">Currency Converter</a></li>
+                                <li class="page_item page-item-5236"><a
+                                        href="http://localhost/probabs/investment-calculator/">Investment Calculator</a>
+                                </li>
+                                <li class="page_item page-item-7231"><a
+                                        href="http://localhost/probabs/personal-loan-calculator/">Personal Loan
+                                        Calculator</a></li>
+                                <li class="page_item page-item-579"><a
+                                        href="http://localhost/probabs/privacy-policy/">Privacy Policy</a></li>
+                                <li class="page_item page-item-7229"><a
+                                        href="http://localhost/probabs/student-loan-calculator/">Student Loan
+                                        Calculator</a></li>
+                            </ul>
+                        </div>
+                        <div class="emailat">
+                            <div> Email Us </div>
+                            <a href="mailto:info@probabs.com" class="mail-i">
+                                <spna class="mail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 12.8 12.8"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.6 3.2q0-.375.225-.575.2-.225.575-.225h8q.375 0 .6.225.2.2.2.575v.4L6.4 6.8 1.6 3.6v-.4Zm4.8 5L11.2 5v4.6q0 .8-.8.8h-8q-.8 0-.8-.8V5l4.8 3.2Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </spna>
+                                <span>
+                                    info@probabs.com
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="mb-0">
+                © 2024 probabs.com All rights reserved
+            </p>
+        </div>
+    </footer>
+    <button class="scroll-top d-flex align-items-center justify-content-center">
+        <svg width="20" height="20" viewBox="0 0 0.5 0.5" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M.275.425v-.29l.082.082A.025.025 0 1 0 .392.182L.267.057a.025.025 0 0 0-.035 0L.107.182a.025.025 0 0 0 0 .035.025.025 0 0 0 .035 0L.225.135v.29a.025.025 0 1 0 .05 0z"
+                fill="#fff"></path>
+        </svg>
+    </button>
+    <script src="assets/bootstrap.js"></script>
+    <script src="assets/script.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+
+                // Initialize variables
+                const loanAmountInputs = document.querySelectorAll('.LOAN_AMOUNT'),
+                      rateOfInterestInputs = document.querySelectorAll('.RATE_OF_INTEREST'),
+                      loanTenureInputs = document.querySelectorAll('.LOAN_TENURE');
+
+                const loanAmountRanges = document.querySelectorAll('.loan-amount'),
+                      rateOfInterestRanges = document.querySelectorAll('.rate-of-interest'),
+                      loanTenureRanges = document.querySelectorAll('.loan-tenure');
+
+                const loansContainer = document.querySelector('#loan_list');
+
+                const addLoanButton = document.querySelector('.result-main a');
+
+                // Range design js
+                function rangeSync() {
+                    const sliderProgresses = document.querySelectorAll('input[type="range"].slider-progress');
+
+                    sliderProgresses.forEach(e => {
+                        e.style.setProperty("--value", e.value);
+                        e.style.setProperty("--min", e.min || "0");
+                        e.style.setProperty("--max", e.max || "100");
+
+                        e.addEventListener("input", () => {
+                            e.style.setProperty("--value", e.value);
+                            // Trigger calculation when range values change
+                            calculateEduLoanEMI();
+                        });
+                    });
+                };
+
+                // Start sync range & inputs
+                const synchronizeFields = (inputField, rangeInput) => {
+
+                    // Prevent copy & paste
+                    inputField.addEventListener('copy', (event) => {
+                        event.preventDefault();
+                    });
+
+                    inputField.addEventListener('paste', (event) => {
+                        event.preventDefault();
+                    });
+
+                    inputField.addEventListener('keydown', (event) => {
+                        const keyCode = event.which;
+                        const isDecimalPoint = keyCode === 110 || keyCode === 190;
+                        const isMinusSign = keyCode === 109 || keyCode === 189;
+                        const isPlusSign = keyCode === 107 || keyCode === 187;
+                        const isEKey = keyCode === 69;
+                        const isArrowUp = keyCode === 38;
+                        const isArrowDown = keyCode === 40;
+
+                        if (isMinusSign || isPlusSign || isEKey || isArrowUp || isArrowDown) {
+                            event.preventDefault();
+                        }
+
+                        if (inputField.classList.contains('LOAN_AMOUNT') || inputField.classList.contains('LOAN_TENURE')) {
+                            if (isDecimalPoint) {
+                                event.preventDefault();
+                            }
+                        }
+                    });
+
+                    inputField.addEventListener('input', function () {
+                        // Sync with range
+                        const value = this.value.trim() === '' ? 0 : this.value;
+                        rangeInput.value = value;
+                        rangeInput.style.setProperty("--value", value);
+
+                        // Adding validation
+                        if (inputField.classList.contains('LOAN_AMOUNT')) {
+                            var inputsValidated = validatePerInput(inputField, 0, '#eb4739ab');
+
+                            if (inputField.value >= 999999) {
+                                inputField.value = 999999;
+                            }
+                        } else if (inputField.classList.contains('RATE_OF_INTEREST')) {
+                            var inputsValidated = validatePerInput(inputField, 1, '#eb4739ab');
+
+                            if (inputField.value >= 40) {
+                                inputField.value = 40;
+                            }
+                            
+                        } else if (inputField.classList.contains('LOAN_TENURE')) {
+                            var inputsValidated = validatePerInput(inputField, 1, '#eb4739ab');
+
+                            if (inputField.value >= 10) {
+                                inputField.value = 10;
+                            }
+                        }
+
+                        // Trigger calculation when input values change
+                        if (inputsValidated) {
+                            calculateEduLoanEMI();
+                        }
+                    });
+
+                    rangeInput.addEventListener('input', function () {
+                        inputField.value = this.value;
+                        inputField.dispatchEvent(new Event('input')); // Trigger input event
+                    });
+                };
+
+                function bindFieldAndRange(inputField) {
+                    const rangeField = inputField.closest('.mb-3').querySelector('input[type=range]');
+                    synchronizeFields(inputField, rangeField);
+                };
+
+                // Inputs validation
+                function validatePerInput (inputField, minValue, errorColor) {
+                    if (inputField.value === '' || parseFloat(inputField.value) < minValue) {
+                        inputField.style.webkitTextFillColor = errorColor;
+                        inputField.style.backgroundColor = 'transparent';
+                        inputField.style.caretColor = errorColor;
+                        inputField.parentNode.style.color = errorColor;
+                        inputField.parentNode.style.backgroundColor = '#eb474736';
+                        return false;
+                    } else {
+                        inputField.style.webkitTextFillColor = '#000000';
+                        inputField.style.backgroundColor = '#e9e9e9';
+                        inputField.style.caretColor = '#000000';
+                        inputField.parentNode.style.color = '#000000';
+                        inputField.parentNode.style.backgroundColor = '#e9e9e9';
+                        return true;
+                    }
+                };
+
+                // Function to add a new loan block
+                function addLoan(event) {
+                    event.preventDefault();
+
+                    // Get the number of existing loans
+                    const existingLoansCount = loansContainer.querySelectorAll('.loan-data').length;
+
+                    // Create a new loan block
+                    const newLoanBlock = document.createElement('div');
+                    newLoanBlock.classList.add('loan');
+
+                    // Create a copy of the first loan block
+                    const firstLoanBlock = loansContainer.querySelector('.loan');
+                    const clonedLoanBlock = firstLoanBlock.cloneNode(true);
+                    clonedLoanBlock.classList.add('mt-4');
+
+                    // Update the loan block number
+                    clonedLoanBlock.querySelector('.loan-data');
+                    clonedLoanBlock.querySelector('.loan-data span').textContent = `Loan ${existingLoansCount + 1}`;
+                    
+                    const remove = document.createElement('button');
+                    remove.classList.add('btn','text-danger');
+                    remove.textContent = 'Remove';
+
+                    // Update loan data parent
+                    const loanDataParent = clonedLoanBlock.querySelector('.loan-data-parent');
+
+                    // Append remove button in loan-data
+                    loanDataParent.appendChild(remove);
+
+                    // Append the cloned loan block to the loans container
+                    loansContainer.appendChild(clonedLoanBlock);
+
+                    // // Clear the input fields in the new loan block
+                    const inputFields = clonedLoanBlock.querySelectorAll('input[type=number]');
+                    inputFields.forEach((inputField) => {
+                        if (inputField.classList.contains('LOAN_AMOUNT')) {
+                            inputField.value = 0;
+                            inputField.closest('.mb-3').querySelector('input[type=range]').value = 0;
+                        } else if (inputField.classList.contains('RATE_OF_INTEREST')) {
+                            inputField.value = 4.2;
+                            inputField.closest('.mb-3').querySelector('input[type=range]').value = 4.2;
+                        } else {
+                            inputField.value = 5;
+                            inputField.closest('.mb-3').querySelector('input[type=range]').value = 5;
+                        }
+
+                    });
+
+                    // Add event listener to the remove button
+                    remove.addEventListener('click', removeLoan);
+                
+                    packageExecute();
+                };
+
+                // Add event listener to the "Add a Loan" button
+                addLoanButton.addEventListener('click', addLoan);
+
+                // Function to remove a loan block
+                function removeLoan(event) {
+                    event.preventDefault();
+
+                    // Get the parent loan block
+                    const loanBlock = event.target.closest('.loan');
+
+                    // Remove the loan block
+                    loanBlock.parentNode.removeChild(loanBlock);
+
+                    // Update the loan numbers of the remaining loan blocks
+                    const loanBlocks = document.querySelectorAll('.loan');
+                    loanBlocks.forEach((block, index) => {
+                        const loanNumber = index + 1;
+                        block.querySelector('.loan-data span').textContent = `Loan ${loanNumber}`;
+
+                        // Update the event listener of the remove button
+                        const removeButton = block.querySelector('.loan-data button');
+                        if (removeButton) {
+                            removeButton.removeEventListener('click', removeLoan);
+                            removeButton.addEventListener('click', removeLoan);
+                        }
+                    });
+
+                    packageExecute();
+                    // Recalculate loan details
+                    calculateEduLoanEMI();
+                };
+
+                // Package execute
+                function packageExecute() {
+
+                    rangeSync();
+
+                    const loanAmountInputs = document.querySelectorAll('.LOAN_AMOUNT'),
+                      rateOfInterestInputs = document.querySelectorAll('.RATE_OF_INTEREST'),
+                      loanTenureInputs = document.querySelectorAll('.LOAN_TENURE');
+
+                    loanAmountInputs.forEach(loanAmountInput => {
+                        bindFieldAndRange(loanAmountInput);
+                    });
+
+                    rateOfInterestInputs.forEach(rateOfInterestInput => {
+                        bindFieldAndRange(rateOfInterestInput);
+                    });
+                    
+                    loanTenureInputs.forEach(loanTenureInput => {
+                        bindFieldAndRange(loanTenureInput);
+                    });
+
+                    calculateEduLoanEMI();
+                };
+
+                // update the loan details in the HTML table
+                function updateLoanDetails(EMI, totalInterest, totalAmount) {
+                    document.querySelector('.top-box.monthly span').textContent = '$' + EMI.toLocaleString('en-IN');
+                    document.querySelector('.cal-ans .top-box span').textContent = '$' + totalInterest.toLocaleString('en-IN');
+                    document.querySelector('.cal-ans .bottom-box span').textContent = '$' + totalAmount.toLocaleString('en-IN');
+                };
+
+                function customRound(n) {
+                    // Check if n is a float (has a fractional part)
+                    if (n % 1 !== 0) {
+                        const fractionalPart = n % 1;
+
+                        // Determine the midpoint value (n.5x)
+                        const midpoint = Math.floor(n) + 0.5;
+
+                        if (fractionalPart < 0.5) {
+                            // If the fractional part is less than 0.5, round down
+                            return Math.floor(n);
+                        } else {
+                            // If the fractional part is greater than or equal to 0.5, round up
+                            return Math.ceil(n);
+                        }
+                    } else {
+                        // If n is an integer, no need to round, return it as is
+                        return n;
+                    }
+                };
+
+                function calculateEduLoanEMI() {
+                   // Get all the loan blocks
+                    const loanBlocks = document.querySelectorAll('.loan');
+
+                    // Initialize total values
+                    let totalEMI = 0;
+                    let totalPrincipal = 0;
+                    let totalInterest = 0;
+                    let isValid = true;
+                    
+                    // Calculate and update values for each loan
+                    loanBlocks.forEach((loanBlock) => {
+                        var loanAmount = parseFloat(loanBlock.querySelector('.LOAN_AMOUNT').value);
+                        var interestRate = parseFloat(loanBlock.querySelector('.RATE_OF_INTEREST').value) / 100;
+                        var loanTenure = parseFloat(loanBlock.querySelector('.LOAN_TENURE').value) * 12;
+
+                        if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTenure) || loanAmount === 0 || interestRate === 0 || loanTenure === 0) {
+                            isValid = false; // Stop calculation for this loan block
+                        }
+                        
+                        if (isValid) {
+                            const monthlyInterestRate = interestRate / 12;
+                            const numerator = loanAmount * monthlyInterestRate * Math.pow((1 + monthlyInterestRate), loanTenure);
+                            const denominator = Math.pow((1 + monthlyInterestRate), loanTenure) - 1;
+    
+                            var loanEMI = numerator / denominator;
+                            
+                            totalPrincipal += loanAmount;
+                            totalInterest += customRound((loanEMI * loanTenure) - loanAmount);
+                            totalEMI += loanEMI;
+                        }
+
+                    });
+
+                    if (isValid) {
+                        
+                        totalEMI = customRound(totalEMI);
+
+                        // Update total values
+                        updateLoanDetails(totalEMI, totalInterest.toLocaleString('en-IN'), (totalPrincipal + totalInterest).toLocaleString('en-IN'));
+                    }
+
+                };
+
+                // package execute on-load
+                packageExecute();
+            });
+
+        </script>
+</body>
+
+</html>

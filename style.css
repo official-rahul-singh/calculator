@@ -1,0 +1,530 @@
+    /* common */
+    .credit-card-body {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, .125);
+        position: relative;
+    }
+    /* heading */
+    .card-h {
+        font-size: 20px;
+        font-weight: 600;
+    }
+        .small-line {
+        height: 4px;
+        background-color: #222;
+        width: 30px;
+    }
+    .big-line {
+        height: 4px;
+        background-color: var(--secondary);
+        width: 90px;
+    }
+    /* heading */
+
+    /* input arrow */
+    .money-cal input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0
+    }
+    .form-control:focus{
+        outline: none;
+        box-shadow: unset;
+        border-color: #939393;
+    }
+/* input arrow */
+/* common */
+
+
+/* personal calculator */
+
+.credit-card-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* .personal-cal .cal-field {
+    width: 110px;
+} */
+
+#loan_list .cal-field{
+    width: 110px;
+}
+.cal-field {
+    position: relative;
+}
+.personal-cal .cal-field-dollar {
+    position: absolute;
+    left: 12px;
+    top: 7px;
+}
+
+.personal-cal .cal-field .form-control {
+    padding-left: 25px;
+}
+.personal-cal .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.personal-cal .detail p{
+    font-weight: 600;
+}
+ .personal-cal .cal-field-percent {
+    position: absolute;
+    right: 12px;
+    top: 7px;
+}
+.personal-cal input[type=range] {
+    margin: 10px 0;
+}
+
+.money-cal input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5* 2em + var(--ratio)*(100% - 2em));
+}
+
+.money-cal input[type=range].styled-slider {
+    -webkit-appearance: none;
+}
+  /*webkit*/
+  .personal-cal input[type=range].styled-slider::-webkit-slider-thumb {
+    box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+    border: 5px solid #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    -webkit-appearance: none;
+    background: var(--secondary);
+  }
+  
+  .personal-cal input[type=range].styled-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: var(--secondary);
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .personal-cal input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#fca0a0, #fca0a0) 0/var(--sx) 100% no-repeat, #ccc;
+  }
+  
+  /*mozilla*/
+  .personal-cal input[type=range].styled-slider::-moz-range-thumb {
+    box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+    border: 5px solid #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background:var(--secondary);
+    cursor: pointer;
+    margin-top: -6px
+  }
+  
+  .personal-cal input[type=range].styled-slider::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #ccc;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    border-radius: 10px;
+  }
+  
+  .personal-cal input[type=range].styled-slider.slider-progress::-moz-range-track {
+    background: linear-gradient(#fce4a0, #fce4a0) 0/var(--sx) 100% no-repeat, #ccc;
+  }
+  
+  
+  /*ms*/
+  .personal-cal input[type=range].styled-slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 5px
+  }
+  
+  .personal-cal input[type=range].styled-slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 5px
+  }
+  
+  .personal-cal input[type=range].styled-slider::-ms-thumb {
+    box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+    border: 5px solid #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+    margin-top: -6px
+  }
+  
+  .personal-cal input[type=range].styled-slider::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #fce4a0;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    border-radius: 10px
+  }
+  
+  .personal-cal input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+    height: max(calc(1em - 1px - 1px), 0px);
+    border-radius: 0.5em 0 0 0.5em;
+    margin: -1px 0 -1px -1px;
+    background: #fce4a0;
+    border: 1px solid #fce4a0;
+    border-right-width: 0;
+  }
+
+/* personal calculator */
+
+
+
+/* student loan calculator */
+.cal-ans.money {
+    position: sticky;
+    top: 88px;
+    left: 0;
+    margin-top: 10px;
+}
+.money-cal .box {
+    padding: 3px 16px;
+    text-align: center;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.money-cal .box:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 1px;
+    background-color: var(--secondary);
+    top: 10px;
+}
+
+.top-box.box.monthly {
+    padding: 16px;
+    background: var(--secondary);
+    color: #fff;
+}
+.loan-data{
+    font-weight: 600;
+    padding: 5px 10px;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+}
+.loan-data-parent .btn{
+border: 1px solid red;
+}
+.result-main a{
+    text-decoration: none;
+}
+/* student loan calculator */
+
+/* investment calculator */
+.cal-ans{
+    padding: 18px;
+    border: 1px solid rgba(0, 0, 0, .125);;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.money-cal .box {
+    padding: 3px 16px;
+    text-align: center;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.cal-ans .middle-box{
+    position: relative;
+}
+.cal-ans .box::before{
+   content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 1px;
+    background-color: var(--secondary);
+    top: 10px;
+    border-radius: 50%;
+}
+
+/* investment calculator */
+
+/* credit card calculator */
+.credit-cd-Payt-cal .credit-card-result {
+    display: flex;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #f9f9f9;
+}
+
+.calculator .card-b-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.credit-cd-Payt-cal .credit-card-result h3 {
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.credit-cd-Payt-cal .totalInvest-values {
+    margin-right: 20px;
+    border-right: 1px solid #dfdfdf;
+    padding-right: 20px;
+    width: 100%;
+}
+.credit-cd-Payt-cal .totalInvest-values p {
+    margin-bottom: 0;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+ #cred-button {
+    background: var(--secondary);
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 16px 52px 16px 32px;
+    margin: auto 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    line-height: 18px;
+    position: relative;
+    border: 4px solid #ff6060;
+    margin-top: 16px;
+}
+ #cred-button:hover {
+    background: #474747;
+    border: 4px solid #c3c3c3;
+}
+
+.credit-cd-Payt-cal .credit-card-result .totalInvest-values:last-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+
+#cred-button:after,#cred-button:before {
+    content: "";
+    background: #fff;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    right: 32px;
+    transform: rotate(45deg);
+    top: 21px;
+}
+
+ #cred-button:after {
+    transform: rotate(-45deg);
+    top: 27px;
+}
+
+.credit-cd-Payt-cal .cal-field .form-control {
+    padding-left: 25px;
+}
+.credit-cd-Payt-cal .cal-field {
+    position: relative;
+}
+.credit-cd-Payt-cal .cal-field-dollar {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+.credit-cd-Payt-cal .cal-field-percent {
+    position: absolute;
+    right: 14px;
+    top: 6px;
+}
+@media screen and (max-width:600px) {
+                .card-h-img{
+                    display: none;
+                }
+            }
+@media screen and (max-width:768px) {
+    .credit-cd-Payt-cal .totalInvest-values {
+                margin-right: 0px;
+                border-right: none;
+                padding-right: 0px;
+                border-bottom: 1px solid #dfdfdf;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+            }
+            .credit-cd-Payt-cal .credit-card-result h3{
+                justify-content: start;
+            }
+            }
+/* credit card calculator */
+
+            /* currency calculator */
+            .currency-cal-form div.dropdown {
+                position: relative;
+                background-color: #ebebeb;
+            }
+            .credit-card-form {
+                background: #f9f9f9;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .credit-card-form .form-control {
+                border: 1px solid #DDDCE0;
+                margin-bottom: 10px;
+                padding: 12px;
+            }
+            .currency-cal-form div.dropdown>div.caption {
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.3px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .currency-cal-form div.dropdown>div.list {
+                position: absolute;
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 0px 12px 24px rgba(21, 18, 51, 0.13);
+                opacity: 0;
+                overflow: hidden;
+                transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+                transform: scale(0.85);
+                transform-origin: 50% 0;
+                top: 38px;
+                left: 0;
+                z-index: -1;
+                visibility: hidden;
+                overflow-y: auto;
+                height: 200px;
+            }
+
+            .result-main p {
+                padding: 15px 60px;
+                background: #fff;
+                border-radius: 10px;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
+                width: fit-content;
+                height: center;
+                max-width: center;
+                font-size: 15px;
+                color: #000000;
+                font-weight: 500;
+                line-height: 22px;
+                margin-bottom: 0;
+                border-bottom: 2px solid #e9e9e9;
+            }
+                .caption-para {
+                -webkit-column-gap: 5px;
+                -moz-column-gap: 5px;
+                column-gap: 5px;
+                display: flex;
+                align-items: flex-start;
+                margin-top: 25px;
+            }
+                .caption-para p {
+                margin: 0;
+                text-align: left;
+                width: 465px;
+                max-width: 100%;
+                font-size: 12px;
+                color: #4f4f4f;
+                font-weight: 500;
+                line-height: 18px;
+            }
+
+            .currency-converter div.dropdown.open>div.list {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
+                z-index: 1;
+                visibility: visible;
+            }
+
+            .currency-converter div.dropdown>div.list {
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 12px 24px rgba(21, 18, 51, 0.13);
+            box-shadow: 0px 12px 24px rgba(21, 18, 51, 0.13);
+            opacity: 0;
+            overflow: hidden;
+            -webkit-transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+            transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+            -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+            -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            left: 0;
+            z-index: -1;
+            visibility: hidden;
+            padding: 10px 0;
+            overflow-y: auto;
+            height: 200px;
+        }
+
+        .currency-converter div.dropdown>div.list>div.item {
+            padding: 10px 15px;
+            cursor: pointer;
+            -webkit-transition: .3s;
+            transition: .3s;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.3px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            @media screen and (max-width:600px) {
+                .reverse-btn svg{
+                    width: 40px;
+                }
+                .reverse-btn{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                .card-h-img{
+                    display: none;
+                }
+            }
+/* currency calculator */
